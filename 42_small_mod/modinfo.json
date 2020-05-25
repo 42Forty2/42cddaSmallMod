@@ -5,7 +5,7 @@
     "name": "Forty's Small Mod",
     "authors": [ "42Forty2" ],
     "maintainers": [ "42Forty2" ],
-    "description": "Adds some personal tweaks, including new start locations, scenarios, clothing mods, etc.",
+    "description": "An eclectic assortment of tweaks, including new start locations, scenarios, clothing mods, etc.",
     "category": "rebalance",
     "dependencies": [ "dda" ],
     "obsolete": false
