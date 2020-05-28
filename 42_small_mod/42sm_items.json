@@ -5,23 +5,11 @@
     "category": "armor",
     "name": { "str": "survivor ammo duster" },
     "description": "A Kevlar armored custom full-length duster, covered with pouches and pockets, including four pouches capable of carrying magazines.  Comfortable, durable, and great for storage.",
-    "weight": "2592 g",
-    "volume": "9500 ml",
-    "price": 40000,
-	"price_postapoc": 120000,
-    "to_hit": -1,
-    "material": [ "cotton", "kevlar" ],
-    "symbol": "[",
+    "copy-from": "duster_survivor",
+	"symbol": "[",
     "looks_like": "duster_survivor",
     "color": "brown",
-    "covers": [ "TORSO", "ARMS", "LEGS" ],
-    "coverage": 85,
-    "encumbrance": 15,
     "storage": "5 L",
-    "warmth": 10,
-    "material_thickness": 3,
-    "valid_mods": [ "steel_padded" ],
-    "environmental_protection": 3,
 	"use_action": {
       "type": "holster",
       "holster_prompt": "Stash ammo",
@@ -31,34 +19,20 @@
       "max_volume": "1 L",
       "draw_cost": 60,
       "flags": [ "MAG_COMPACT" ]
-    },
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    }
   },
   {
     "id": "sleeveless_duster_survivor_ammo",
     "type": "ARMOR",
     "category": "armor",
     "name": { "str": "sleeveless survivor ammo duster" },
-    "//": "The general guideline for sleeveless dusters is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
-    "description": "A custom Kevlar armored full-length duster without sleeves, covered with pouches and pockets, including four pouches capable of carrying magazines.  Comfortable, durable, and great for storage.",
-    "weight": "2203 g",
-    "volume": "8 L",
-    "price": 34000,
-	"price_postapoc": 102000,
-    "to_hit": -1,
-    "material": [ "cotton", "kevlar" ],
+	"description": "A custom Kevlar armored full-length duster without sleeves, covered with pouches and pockets, including four pouches capable of carrying magazines.  Comfortable, durable, and great for storage.",
+    "copy-from": "sleeveless_duster_survivor",
     "symbol": "[",
     "looks_like": "sleeveless_duster_survivor",
     "color": "brown",
-    "covers": [ "TORSO", "LEGS" ],
-    "coverage": 85,
-    "encumbrance": 15,
-    "storage": "5 L",
-    "warmth": 10,
-    "material_thickness": 3,
-    "valid_mods": [ "steel_padded" ],
-    "environmental_protection": 3,
-	"use_action": {
+	"storage": "5 L",
+    "use_action": {
       "type": "holster",
       "holster_prompt": "Stash ammo",
       "holster_msg": "You stash your %s.",
@@ -67,8 +41,7 @@
       "max_volume": "1 L",
       "draw_cost": 60,
       "flags": [ "MAG_COMPACT" ]
-    },
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    }
   },
   {
     "id": "trenchcoat_survivor_ammo",
@@ -76,24 +49,12 @@
     "category": "armor",
     "name": { "str": "survivor ammo trenchcoat" },
     "description": "A Kevlar armored custom trenchcoat, covered with pouches and pockets, including four pouches capable of carrying magazines.  Comfortable, durable, and great for storage.",
-    "weight": "1920 g",
-    "volume": "7 L",
-    "price": 40000,
-	"price_postapoc": 120000,
-    "to_hit": -1,
-    "material": [ "cotton", "kevlar" ],
+    "copy-from": "trenchcoat_survivor",
     "symbol": "[",
     "looks_like": "trenchcoat_survivor",
     "color": "brown",
-    "covers": [ "TORSO", "ARMS" ],
-    "coverage": 85,
-    "encumbrance": 15,
-    "storage": "5 L",
-    "warmth": 10,
-    "material_thickness": 3,
-    "valid_mods": [ "steel_padded" ],
-    "environmental_protection": 3,
-	"use_action": {
+	"storage": "5 L",
+    "use_action": {
       "type": "holster",
       "holster_prompt": "Stash ammo",
       "holster_msg": "You stash your %s.",
@@ -102,34 +63,20 @@
       "max_volume": "1 L",
       "draw_cost": 60,
       "flags": [ "MAG_COMPACT" ]
-    },
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    }
   },
   {
     "id": "sleeveless_trenchcoat_survivor_ammo",
     "type": "ARMOR",
     "category": "armor",
     "name": { "str": "sleeveless survivor ammo trenchcoat" },
-    "//": "The general guideline for sleeveless trenchcoats is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
     "description": "A custom Kevlar armored trenchcoat without sleeves, covered with pouches and pockets, including four pouches capable of carrying magazines.  Comfortable, durable, and great for storage.",
-    "weight": "1632 g",
-    "volume": "6 L",
-    "price": 34000,
-	"price_postapoc": 102000,
-    "to_hit": -1,
-    "material": [ "cotton", "kevlar" ],
+    "copy-from": "sleeveless_trenchcoat_survivor",
     "symbol": "[",
     "looks_like": "sleeveless_trenchcoat_survivor",
     "color": "brown",
-    "covers": [ "TORSO" ],
-    "coverage": 85,
-    "encumbrance": 15,
     "storage": "5 L",
-    "warmth": 10,
-    "material_thickness": 3,
-    "valid_mods": [ "steel_padded" ],
-    "environmental_protection": 3,
-	"use_action": {
+    "use_action": {
       "type": "holster",
       "holster_prompt": "Stash ammo",
       "holster_msg": "You stash your %s.",
@@ -138,8 +85,7 @@
       "max_volume": "1 L",
       "draw_cost": 60,
       "flags": [ "MAG_COMPACT" ]
-    },
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    }
   },
   {
     "id": "gloves_csurvivor",
@@ -147,21 +93,13 @@
     "category": "armor",
     "name": { "str": "pair of clawed survivor gloves", "str_pl": "pairs of clawed survivor gloves" },
     "description": "A pair of customized, Kevlar armored cloth gloves for those with natural attacks, modified to be easy to wear while providing maximum protection under extreme conditions.",
-    "weight": "190 g",
-    "volume": "750 ml",
-    "price": 18000,
-    "to_hit": 2,
-    "material": [ "kevlar", "cotton" ],
+    "copy-from": "gloves_lsurvivor",
     "symbol": "[",
     "looks_like": "gloves_lsurvivor",
     "color": "green",
-    "covers": [ "HANDS" ],
-    "coverage": 100,
-    "encumbrance": 10,
-    "warmth": 15,
-    "material_thickness": 3,
-    "environmental_protection": 3,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "ALLOWS_NATURAL_ATTACKS" ]
+    "extend": {
+		"flags": [ "ALLOWS_NATURAL_ATTACKS" ]
+	}
   },
   {
     "id": "headlight_atomic",
