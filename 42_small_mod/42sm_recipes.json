@@ -32,7 +32,7 @@
   {
     "result": "sleeveless_duster_survivor_ammo",
     "type": "recipe",
-    "id_suffix": "from_duster_survivor",
+    "id_suffix": "from_duster_survivor_ammo",
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_TORSO",
     "//": "The general guideline for sleeveless dusters is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
@@ -108,7 +108,7 @@
   {
     "result": "sleeveless_trenchcoat_survivor_ammo",
     "type": "recipe",
-    "id_suffix": "from_trenchcoat_survivor",
+    "id_suffix": "from_trenchcoat_survivor_ammo",
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_TORSO",
     "//": "The general guideline for sleeveless trenchcoats is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
@@ -181,6 +181,7 @@
   {
     "result": "gloves_csurvivor",
     "type": "recipe",
+	"id_suffix": "from_gloves",
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_HANDS",
     "skill_used": "tailor",
@@ -292,10 +293,47 @@
     ]
   },
   {
+    "result": "megafreezer",
+    "type": "recipe",
+	"id_suffix": "from_minifreezer"
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "mechanics",
+    "skills_required": [ "fabrication", 3 ],
+    "difficulty": 3,
+    "time": "30 m",
+    "autolearn": true,
+    "using": [ [ "welding_standard", 50 ] ],
+	"byproducts": [
+	  [ [ "condensor_coil", 1 ] ],
+      [ [ "evaporator_coil", 1 ] ],
+      [ [ "thermostat", 1 ] ],
+      [ [ "motor_tiny", 1 ] ],
+      [ [ "refrigerant_tank", 1 ] ]
+	]
+    "qualities": [
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SAW_M", "level": 1 },
+      { "id": "DRILL", "level": 1 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "WRENCH", "level": 1 }
+    ],
+    "components": [
+      [ [ "minifreezer", 1 ] ],
+      [ [ "minifreezer", 1 ], [ "minifridge", 1 ] ]
+    ]
+  },
+  {
     "result": "megafridge",
     "type": "recipe",
-    "copy-from": "megafreezer",
+    "skill_used": "mechanics",
     "skills_required": [ "fabrication", 5 ],
+    "difficulty": 5,
+    "time": "180 m",
+    "reversible": true,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_mechanics", 6 ], [ "manual_mechanics", 6 ], [ "textbook_fabrication", 6 ] ],
+	"using": [ [ "welding_standard", 75 ] ],
     "qualities": [
       { "id": "HAMMER", "level": 2 },
       { "id": "SAW_M", "level": 1 },
@@ -311,6 +349,37 @@
       [ [ "motor_tiny", 1 ] ],
       [ [ "refrigerant_tank", 1 ] ],
       [ [ "plastic_chunk", 16 ] ]
+    ]
+  }
+  {
+    "result": "megafridge",
+    "type": "recipe",
+	"id_suffix": "from_minifridge"
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "mechanics",
+    "skills_required": [ "fabrication", 3 ],
+    "difficulty": 3,
+    "time": "30 m",
+    "autolearn": true,
+    "using": [ [ "welding_standard", 50 ] ],
+	"byproducts": [
+	  [ [ "condensor_coil", 1 ] ],
+      [ [ "evaporator_coil", 1 ] ],
+      [ [ "thermostat", 1 ] ],
+      [ [ "motor_tiny", 1 ] ],
+      [ [ "refrigerant_tank", 1 ] ]
+	]
+    "qualities": [
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SAW_M", "level": 1 },
+      { "id": "DRILL", "level": 1 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "WRENCH", "level": 1 }
+    ],
+    "components": [
+      [ [ "minifridge", 1 ] ],
+      [ [ "minifridge", 1 ], [ "minifreezer", 1 ] ]
     ]
   }
 ]
